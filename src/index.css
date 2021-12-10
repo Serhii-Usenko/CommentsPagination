@@ -1,0 +1,66 @@
+.lightMod {
+    --clr-bcgd: white;
+    --clr-text: black;
+}
+
+.darkMod {
+    --clr-bcgd: black;
+    --clr-text: white;
+}
+
+html {
+    background-color: var(--clr-bcgd);
+}
+
+h1 {
+    text-align: center;
+    color: var(--clr-text);
+}
+
+.theme {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 20px 20px 0;
+}
+
+.pageNumbers {
+    margin-top: 10px;
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.pageNumbers li{
+    padding: 10px;
+    margin: 2px;
+    border: 1px solid var(--clr-text);
+    cursor: pointer;
+}
+
+.pageNumbers li.active {
+    background-color: rgb(19, 18, 18);
+    color: rgb(243, 243, 245);
+}
+
+.pageNumbers li.unActive {
+    background-color: rgb(243, 243, 245);
+    color: rgb(19, 18, 18);
+}
+
+.comments {
+    color: var(--clr-text);
+}
+
+.buttonNav {
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.loadMore {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
